@@ -1,0 +1,83 @@
+.footer {
+  background-color: #000000;
+  position: relative;
+}
+.rodape {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 100px 60px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+}
+.mensagem h3 {
+  color: #eaeaea;
+  margin-top: 40px;
+  max-width: 40ch;
+}
+.mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.mensagem p {
+  color: #9d9a9a;
+  font-size: 0.95rem;
+}
+.dados-contato p {
+  color: #eaeaea;
+}
+.info-contato {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.item {
+  display: flex;
+  gap: 15px;
+}
+.item p {
+  font-size: 1.1rem;
+}
+.redes {
+  display: flex;
+  gap: 40px;
+  padding: 0 60px;
+}
+.dados-contato {
+  display: grid;
+  gap: 100px;
+}
+.logo-rede {
+  width: 40px;
+}
+@media (max-width: 800px) {
+  .mensagem-txt {
+    font-size: 1.1rem;
+  }
+  .rodape {
+    grid-template-columns: 1fr;
+  }
+  .mensagem h3 {
+    color: #eaeaea;
+    margin-top: 0px;
+    max-width: 55ch;
+    margin-bottom: 40px;
+  }
+  .copy {
+    position: absolute;
+    bottom: 30px;
+    align-self: center;
+  }
+  .info-contato {
+    gap: 20px;
+  }
+  .dados-contato {
+    display: grid;
+    gap: 50px;
+  }
+  .logo-rede {
+    margin-bottom: 50px;
+  }
+}

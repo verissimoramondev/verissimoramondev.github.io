@@ -1,0 +1,117 @@
+.formacao {
+  background: #2d2d2d;
+  position: relative;
+}
+.formacao::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("./img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  z-index: 1;
+  left: 40px;
+}
+.formacao-area {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 90px 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+}
+.subtitulo-formacao {
+  font-size: 8rem;
+  color: #3c3c3c;
+  word-break: break-all;
+  text-transform: uppercase;
+  line-height: 1;
+  max-width: 4ch;
+}
+.curso {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column; /* organiza em coluna */
+  gap: 10px; /* espaço entre o <p>, <h3> e o outro <p> */
+}
+.idioma-nivel {
+  position: relative;
+}
+.icone {
+  position: absolute;
+  left: -35px;
+  top: 4px;
+}
+.ano-curso {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  color: #9c9999;
+  font-size: 0.8rem;
+}
+.origamid {
+  font-size: 1.1rem;
+  color: #9c9999;
+}
+.origamid-curso {
+  color: #eaeaea;
+  font-size: 1.2rem;
+}
+.texto-curso {
+  color: #9c9999;
+  max-width: 115ch;
+}
+.idioma-nivel {
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column; /* organiza em coluna */
+  gap: 10px; /* espaço entre o <p>, <h3> e o outro <p> */
+}
+.idioma-titulo {
+  color: #eaeaea;
+  font-size: 1.2rem;
+}
+/* .idioma-nivel {
+  position: absolute;
+  bottom: 95px;
+} */
+.idioma-nivel p {
+  color: #eaeaea;
+}
+.nivel {
+  color: #9c9999;
+}
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .icone {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .formacao-area {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .icone {
+    position: absolute;
+    left: -35px;
+    top: 4px;
+  }
+  .subtitulo-formacao {
+    color: #eaeaea;
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}
+@media (max-width: 500px) {
+  .ano-curso {
+    display: none;
+  }
+  .curso {
+    margin-bottom: 50px;
+  }
+}

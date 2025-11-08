@@ -1,0 +1,92 @@
+.introducao {
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  padding: 40px 40px;
+  gap: 10px;
+}
+.apresentacao h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+.apresentacao {
+  position: relative;
+}
+.detalhe {
+  position: absolute;
+  width: 80px;
+  z-index: -1;
+  top: -10px;
+  left: -20px;
+}
+.local {
+  display: flex;
+  gap: 10px;
+  padding-top: 40px;
+}
+
+@media (max-width: 1100px) {
+  .introducao {
+    max-width: 1100px;
+    gap: 50px;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+  }
+  .apresentacao h1 {
+    font-size: 3rem;
+  }
+  .foto {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .detalhe {
+    width: 60px;
+  }
+  .local {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .introducao {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+  }
+  .introducao .foto {
+    display: none;
+  }
+  .apresentacao {
+    align-items: center;
+  }
+  .apresentacao h1 {
+    font-size: 2.8rem;
+  }
+  .apresentacao h1 br:nth-of-type(1) {
+    display: none;
+  }
+  .apresentacao h1 br:nth-of-type(2) {
+    display: none;
+  }
+  .apresentacao h1 .linha2 {
+    display: block; /* faz a quebra APARECER antes do span */
+  }
+  .detalhe {
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .local {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 525px) {
+  .apresentacao h1 {
+    font-size: 2.5rem;
+  }
+  .detalhe {
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+}
