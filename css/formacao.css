@@ -108,7 +108,7 @@
   }
 }
 @media (max-width: 525px) {
-  .subtitulo-formacao {
+  .formacao-area .subtitulo-formacao {
     font-size: 2.3rem;
   }
 }
